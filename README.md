@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# razan-productivity-assistant
+A quiet place to track learning, build consistency, and turn effort into something visible.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What this is
+This is a personal learning tracker built to encourage consistency without pressure.
+Instead of focusing on productivity or speed, the app focuses on:
+- Showing up daily
+- Tracking effort honestly
+- Visualizing progress over time
 
-Currently, two official plugins are available:
+Inspired by GitHub’s contribution graph — but for learning.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## Why I’m building this
+I wanted a tool that helps me:
+- Track what I learn each day
+- Stay consistent without burnout
+- See progress visually, not emotionally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is also a way for me to:
+- Practice building real-world apps
+- Learn React and Firebase properly
+- Improve slowly, intentionally, and consistently
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Core features (current & planned)
+- Clean, minimal UI
+- Daily task tracking
+- GitHub-style contribution heatmap
+- Streak tracking
+- Dark-mode-first design
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Planned:**
+- Time-based task tracking (focus sessions)
+- Extendable learning sessions
+- Weekly and monthly summaries
+- Gentle insights (no pressure metrics)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Tech stack
+- **Frontend:** React (Vite)  
+- **Styling:** Tailwind CSS  
+- **Backend:** Firebase (Auth, Firestore)  
+- **Hosting:** Firebase Hosting  
+- **Utilities:** date-fns
