@@ -1,0 +1,51 @@
+header {
+    padding-inline: 18.75rem;
+    padding-block: 1rem;
+    background-color: #1B0D2265;
+    border-bottom: 1px solid #6B0FA3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Fredoka, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.straightLine {
+    width: 2px;
+    height: 2rem;
+    background-color: rgb(144, 142, 142);
+}
+
+.usersSummary {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    color: #D8AAFF;
+    font-family: Poppins, sans-serif;
+}
+
+.usersSummary .bigText {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Fredoka, sans-serif;
+}
+
+.headerLink {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.headerLink p {
+    background: linear-gradient(90deg, #B336FF 0%, #A946FF 50%, #9946F2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
