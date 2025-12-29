@@ -1,0 +1,21 @@
+.gradientBorder {
+    padding: 2px;
+    border-radius: 6px;
+}
+
+.frostedButton {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    font-family: Inter, sans-serif;
+    font-size: 0.75rem;
+}

@@ -1,6 +1,5 @@
 import styles from "./Header.module.css"
 import ClearBtn from "../ClearBtn/ClearBtn"
-import ContactBelt from "../ContactBelt/ContactBelt";
 
 const Header: React.FC = () => {
     return (
@@ -22,7 +21,6 @@ const Header: React.FC = () => {
                     <ClearBtn text="Github" image="/github-icon.svg" color="#FF9800" />
                 </div>
             </header>
-            <ContactBelt />
         </>
     )
 }

@@ -11,6 +11,25 @@
     gap: 1rem;
 }
 
+.btnContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
 .lighterText {
     color: #777676;
+}
+
+@media screen and (max-width: 699px) {
+    .contactBelt {
+        padding-inline: 3rem;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 700px) {
+    .contactBelt {
+        padding-inline: 3rem;
+    }
 }

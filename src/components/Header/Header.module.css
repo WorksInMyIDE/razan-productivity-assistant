@@ -49,3 +49,34 @@ header {
     color: transparent;
     font-weight: 700;
 }
+
+@media screen and (max-width: 699px) {
+    header {
+        padding-inline: 1.75rem;
+        flex-direction: column;
+    }
+
+    .usersSummary {
+        font-size: 0.8rem;
+    }
+
+    .usersSummary .bigText {
+        font-size: 1rem;
+    }
+
+    .headerLink p {
+        font-weight: 500;
+    }
+
+    .container {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 700px) {
+    header {
+        padding-inline: 1.75rem;
+        /* flex-direction: column; */
+    }
+
+}
