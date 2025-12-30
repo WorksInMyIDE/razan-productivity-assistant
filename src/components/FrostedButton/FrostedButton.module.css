@@ -19,3 +19,9 @@
     font-family: Inter, sans-serif;
     font-size: 0.75rem;
 }
+
+@media (min-width: 1024px) {
+    .frostedButton {
+        font-size: 0.85;
+    }
+}

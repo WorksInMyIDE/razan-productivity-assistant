@@ -80,3 +80,9 @@ header {
     }
 
 }
+
+@media (min-width: 1280px) {
+    header {
+        padding-inline: 18.75rem;
+    }
+}

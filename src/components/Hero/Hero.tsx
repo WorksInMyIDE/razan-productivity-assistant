@@ -1,5 +1,6 @@
 import FrostedButton from "../FrostedButton/FrostedButton";
 import styles from "./Hero.module.css"
+import LogInForm from "../LogInForm/LogInForm"
 
 const Hero: React.FC = () => {
     return <div className={styles.container}>
@@ -13,7 +14,9 @@ const Hero: React.FC = () => {
             </div>
             <FrostedButton text="daily streak system to keep you consistent" image="/streak-icon.svg" gradient="#EB8D0030" color="#FFE6C0" />
         </div>
-        <div className={styles.formContainer}></div>
+        <div className={styles.formContainer}>
+            <LogInForm />
+        </div>
 
     </div>
 }

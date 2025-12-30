@@ -1,3 +1,10 @@
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +12,12 @@
 }
 
 body {
-    background: linear-gradient(107.56deg, #30004D 0%, #300046 50%, #1E004C 100%);
+    background: linear-gradient(38.17deg, #30004D 2.56%, #260137 50%, #1E004C 97.44%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

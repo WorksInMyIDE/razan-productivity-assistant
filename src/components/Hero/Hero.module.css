@@ -1,6 +1,9 @@
 .container {
     padding-inline: 1.75rem;
     padding-block: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .title {
@@ -24,4 +27,43 @@
     display: flex;
     flex-direction: column;
     gap: 0.45rem;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .formContainer, .textContainer {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        padding-inline: 15rem;
+        gap: 7rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container {
+        padding-inline: 20rem;
+    }
+    .textContainer .title {
+        font-size: 6rem;
+    }
+    .styledText {
+        font-size: 2.25rem;
+    }
+    .heroText{
+        font-size: 1.25rem;
+    }
+    .factsContainer {
+        flex-direction: row;
+    }
+    .factsContainer div {
+        flex: 1;
+    }
 }

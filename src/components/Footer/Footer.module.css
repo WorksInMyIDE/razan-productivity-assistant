@@ -1,0 +1,12 @@
+.footer {
+    background-color: #0D1119;
+    padding: 1.5rem 2rem;
+    color: #ffffff50;
+    font-family: Inter, sans-serif;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.deeper {
+    color: #777676;
+}

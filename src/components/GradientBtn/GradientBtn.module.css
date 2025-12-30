@@ -1,15 +1,16 @@
 .border {
-  padding: 2px; /* THIS is the border thickness */
+  padding: 2px;
   border-radius: 12px;
 }
 
 .button {
-  padding: 0.45rem 2.25rem;
+  padding: 0.25rem 2.25rem;
   width: 100%;
   background-color: #00000020;
   color: rgb(180, 180, 180);
   border: none;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 0.85rem;
   cursor: pointer;
+  align-self: flex-start;
 }
