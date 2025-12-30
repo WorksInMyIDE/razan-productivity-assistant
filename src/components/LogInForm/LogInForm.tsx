@@ -2,7 +2,11 @@ import ClearBtn from "../ClearBtn/ClearBtn"
 import GradientBtn from "../GradientBtn/GradientBtn"
 import styles from "./LogInForm.module.css"
 
-const LogInForm: React.FC = () => {
+type logInFormProps = {
+    switchToRegister: () => void
+}
+
+const LogInForm: React.FC<logInFormProps> = ({ switchToRegister }) => {
     return <form>
         <div className={styles.signInHeading}>
             <h3>Sign In</h3>
@@ -26,7 +30,7 @@ const LogInForm: React.FC = () => {
             <ClearBtn text="Sign in" color="#FF9800" />
             <div className={styles.noAccount}>
                 <p>Don't have an account yet?</p>
-                <GradientBtn text="register" gradient="linear-gradient(90deg, rgba(0, 242, 93, 0.5) 0%, rgba(0, 109, 42, 0.5) 100%)" />
+                <GradientBtn onMouseClick={switchToRegister} text="Register" gradient="linear-gradient(90deg, rgba(0, 242, 93, 0.5) 0%, rgba(0, 109, 42, 0.5) 100%)" />
             </div>
         </div>
     </form>
